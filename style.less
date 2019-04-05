@@ -26,7 +26,7 @@ header {
 			padding: 35.5px 32px;
 			color: #fff;
 			cursor: pointer;
-			font-size: 14px;
+			font-size: 16px;
 			font-weight: 700;
 			transition-duration: 0.2s;
 			&:hover {
@@ -429,17 +429,17 @@ h2 {
 	}
 }
 
-.get-in-touch{
+.get-in-touch {
 	display: grid;
 	grid-template-columns: 1fr 730px 105px 413px 1fr;
 	grid-template-rows: 105px 290px 480px 110px;
 
-	.top{
-		grid-column-start:2;
-		grid-row-start:2;
-		
-		.text{
-		position: relative;
+	.top {
+		grid-column-start: 2;
+		grid-row-start: 2;
+
+		.text {
+			position: relative;
 			&::after {
 				content: "";
 				width: 130px;
@@ -451,97 +451,93 @@ h2 {
 				// margin-left: -65px;
 			}
 		}
-
 	}
-	form{
-		grid-column-start:2;
-		grid-row-start:3;
+	form {
+		grid-column-start: 2;
+		grid-row-start: 3;
 		display: grid;
-		grid-template-columns:1fr 1fr;
+		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 65px 250px 65px;
-		grid-row-gap:50px;
+		grid-row-gap: 50px;
 
-		input{
+		input {
 			height: 65px;
 			width: 305px;
 			border: none;
-			border-radius:5px;
-			background-color:#e5e5e5;
+			border-radius: 5px;
+			background-color: #e5e5e5;
 			padding-left: 30px;
-			
-
 		}
-		.mail{
-			justify-self:right;
+		.mail {
+			justify-self: right;
 		}
-		.message{
-				grid-column-start:1;
-				grid-column-end:3;
-				width:670px;
-				height: 210px;
-				border-radius:5px;
-				background-color:#e5e5e5;
-				padding:20px 30px;
-				border:none;
-				resize: none;
-
-			}
-		input[type='button']{
-			grid-column-start:1;
-			grid-column-end:3;
+		.message {
+			grid-column-start: 1;
+			grid-column-end: 3;
+			width: 670px;
+			height: 210px;
+			border-radius: 5px;
+			background-color: #e5e5e5;
+			padding: 20px 30px;
+			border: none;
+			resize: none;
+		}
+		input[type="button"] {
+			grid-column-start: 1;
+			grid-column-end: 3;
 			width: 730px;
-			background-color:#ff3f40;
+			background-color: #ff3f40;
 			font-weight: 700;
-			padding:0;
-			color:#fff;
+			padding: 0;
+			color: #fff;
 			cursor: pointer;
 
-			&:hover{
-								color: #ff3f40;
+			&:hover {
+				color: #ff3f40;
 				background-color: #fff;
 				border: 2px solid #ff3f40;
 			}
 		}
 	}
-	.contact-info{
-		grid-column-start:4;
-		grid-row-start:3;
-		background-color:#2d2d2d;
-		color:#e0e0e0;
+	.contact-info {
+		grid-column-start: 4;
+		grid-row-start: 3;
+		background-color: #2d2d2d;
+		color: #e0e0e0;
 		padding: 100px 0 0 100px;
-		h3,p{
+		h3,
+		p {
 			margin-bottom: 50px;
 		}
-		p{
-
+		p {
 		}
 	}
-	.right{
-		grid-column-start:5;
-		grid-row-start:3;
-		background-color:#2d2d2d;
+	.right {
+		grid-column-start: 5;
+		grid-row-start: 3;
+		background-color: #2d2d2d;
 	}
 }
-footer{
-	background-color:#313030;
+footer {
+	background-color: #313030;
 	display: grid;
 	grid-template-columns: 1fr 1248px 1fr;
 	// grid-template-rows:1fr;
-	align-items:center;
+	align-items: center;
 
-	p{
-		grid-column-start:2;
-		color:#b8b8b8;
+	p {
+		grid-column-start: 2;
+		color: #b8b8b8;
 		// width: 400px;
-		grid-row-start:1;
+		grid-row-start: 1;
 	}
-	.icons{
-		grid-column-start:2;
-		grid-row-start:1;
-		justify-self:right;
+	.icons {
+		grid-column-start: 2;
+		grid-row-start: 1;
+		justify-self: right;
 		// align-self:center;
 
-		& *{
+		& * {
 			height: 33px;
 			width: 33px;
 			cursor: pointer;
@@ -549,19 +545,42 @@ footer{
 	}
 }
 
-#scrollTop{
+#scrollTop {
 	display: none;
-	position:fixed;
+	position: fixed;
 	right: 50px;
-	bottom:80px;
+	bottom: 80px;
 
-
-	background-color:#313030;
+	background-color: #313030;
 	width: 50px;
 	height: 50px;
 	cursor: pointer;
-	border-radius:5px;
-	&:hover{
-		background-color:#ff3f40;
+	border-radius: 5px;
+	&:hover {
+		background-color: #ff3f40;
+	}
+}
+
+// @media screen and (max-width: 568) {
+// 	header .top p {
+// 		font-size: 26px;
+// 	}
+// 	.text {
+// 		font-size: 26px;
+// 	}
+// }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+	header nav .link {
+		font-size: 28px;
+	}
+	header .top p {
+		font-size: 28px;
+	}
+	.text {
+		font-size: 28px;
+	}
+	.get-in-touch .contact-info {
+		font-size: 28px;
 	}
 }
